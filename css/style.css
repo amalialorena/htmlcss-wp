@@ -30,11 +30,8 @@ body {
 
 .logo img {
     height: 60px;
-}
-
-.logo {
-    width: 165px;
     border-right: 1px solid #ccc;
+    padding-right: 20px;
 }
 
 /* Navigation menu */
@@ -54,12 +51,20 @@ a {
 }
 
 /* Jumbotron */
-.section1 {
+.jumbotron {
     margin:20px 0;
-    /* debug rules */
-    height: 500px;
-    background-color: rgb(247, 228, 122);
-    
+    background-image: url(../img/banner.jpg);
+    height: 439px;
+    background-position: center;
+    padding:280px 345px 15px 37px;
+    color: white;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.315);
+}
+
+.jumbotron-title {
+    font-size: 27px;
+    color: white;
 }
 
 /* Content */
@@ -71,15 +76,15 @@ a {
     background-color: rgb(156, 217, 245);
 }
 
-.section2 {
+.content{
     padding-bottom: 20px;
     /* debug rules */
     background-color: rgb(6, 141, 252); 
  
 }
 
-.column1, .column2, .column3{
-    width: 24%;
+.column {
+    width: 50%;
     float: left;
     /* debug rules */
     background-color:rgb(156, 217, 245);
@@ -87,8 +92,8 @@ a {
     
 }
 
-.column2 {
-    width: 50%;
+.column.side-column{
+    width: 23%;
     margin: 0 1%;
     /* debug rules */
     height: 700px;
