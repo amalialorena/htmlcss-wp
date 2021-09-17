@@ -1,0 +1,105 @@
+
+/* general */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* debug rules */
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 0 20px;
+    color: #ccc;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Header */
+
+.logo img {
+    height: 60px;
+}
+
+.logo {
+    width: 165px;
+    border-right: 1px solid #ccc;
+}
+
+/* Navigation menu */
+
+nav {
+    margin: 25px 0;
+}
+
+ul li {
+    display: inline-block; 
+    margin-right: 5px;  
+}
+a {
+    text-decoration: none;
+    color: rgb(161, 160, 160);
+    font-size: 15px;
+}
+
+/* Jumbotron */
+.section1 {
+    margin:20px 0;
+    /* debug rules */
+    height: 500px;
+    background-color: rgb(247, 228, 122);
+    
+}
+
+/* Content */
+
+.title {
+    height: 60px;
+    margin-bottom: 20px;
+    /* debug rules */
+    background-color: rgb(156, 217, 245);
+}
+
+.section2 {
+    padding-bottom: 20px;
+    /* debug rules */
+    background-color: rgb(6, 141, 252); 
+ 
+}
+
+.column1, .column2, .column3{
+    width: 24%;
+    float: left;
+    /* debug rules */
+    background-color:rgb(156, 217, 245);
+    height: 700px;
+    
+}
+
+.column2 {
+    width: 50%;
+    margin: 0 1%;
+    /* debug rules */
+    height: 700px;
+    
+}
+
+/* Footer */
+
+footer {
+    margin-top: 10px;
+     /* debug rules */
+     height: 50px;
+    background-color: rgb(198, 46, 245);
+}
