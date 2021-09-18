@@ -18,6 +18,7 @@ body {
     margin: 0 auto;
     padding: 0 0 20px;
     color: #ccc;
+    max-width: 1000px;
 }
 
 .clearfix::after {
@@ -56,10 +57,16 @@ a {
     background-image: url(../img/banner.jpg);
     height: 439px;
     background-position: center;
-    padding:280px 345px 15px 37px;
     color: white;
     border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.315);
+    position: relative;
+}
+
+.jumbotron-text {
+    padding: 0 30% 0 50px;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 60px;
 }
 
 .jumbotron-title {
@@ -88,25 +95,53 @@ a {
 
 .content{
     padding-bottom: 20px;
- 
 }
 
 .column {
+    float: left; 
+}
+
+.column.center {
     width: 50%;
-    float: left;
-    /* debug rules */
-    background-color:rgb(156, 217, 245);
-    height: 700px;
-    
+    margin: 0 2%;
 }
 
 .column.side-column{
     width: 23%;
-    margin: 0 1%;
-    /* debug rules */
-    height: 700px;
-    
 }
+
+.column-title {
+    color: rgb(46, 45, 45);
+    margin: 10px 0;
+}
+.img {
+   height: 150px;
+   position:relative;
+   overflow: hidden;
+}
+
+.img img {
+    width: 100%;
+    position:absolute;
+}
+
+.center.img img {
+    width: 114%;
+    top: -81px;
+    left: -47px;
+}
+
+.left.img img {
+    width: 82%;
+    top: -9px;
+}
+
+.right.img img{
+    width: 122%;
+    top: -7px;
+    left: -34px;
+}
+
 
 /* Footer */
 
